@@ -228,36 +228,39 @@
 
 /*
 ====================================================================
-   AGEWALLET LOADER - USAGE EXAMPLES
+   AGEWALLET LOADER - CONFIGURATION
 ====================================================================
 
-   Paste the appropriate snippet into the <head> or <footer> of your HTML file.
+   1. GETTING YOUR CREDENTIALS
+      - Go to the AgeWallet Dashboard.
+      - Create a new App.
+      - In "Redirect URI", enter your website's Home Page URL (e.g. https://mywinery.com).
+      - Copy your Client ID.
 
-   1. BASIC USAGE
+   2. BASIC USAGE
       - Uses default AgeWallet styling and English text.
-      - Only 'data-client-id' is required.
+      - Place this script before the closing </body> tag on every page you want to protect.
    -----------------------------------------------------------------
    <script
-       src="https://your-cdn.com/aw-loader.js"
+       src="https://cdn.jsdelivr.net/gh/ashgoodman/agewallet-simplejs@1/aw-loader.js"
        data-client-id="YOUR_CLIENT_ID">
    </script>
 
 
-   2. ADVANCED USAGE (Fully Customized)
-      - Overrides the logo, loads a custom CSS file, and translates text.
+   3. ADVANCED USAGE (Fully Customized)
+      - Overrides the logo, message, and button text.
       - Sets verification to expire after 60 minutes.
    -----------------------------------------------------------------
    <script
-       src="https://your-cdn.com/aw-loader.js"
+       src="https://cdn.jsdelivr.net/gh/ashgoodman/agewallet-simplejs@1/aw-loader.js"
        data-client-id="YOUR_CLIENT_ID"
-       data-logo="https://yoursite.com/assets/logo.png"
-       data-css="https://yoursite.com/assets/gate-theme.css"
-       data-expiry="60"
        data-title="Age Verification Required"
        data-description="Please confirm you are over 18 to enter."
+       data-logo="https://yoursite.com/assets/logo.png"
        data-yes-label="Verify Now"
        data-no-label="I am under 18"
-       data-error-msg="Access denied. Minimum age not met.">
+       data-error-msg="Access denied."
+       data-expiry="60">
    </script>
 
 ====================================================================
