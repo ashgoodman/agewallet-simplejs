@@ -21,9 +21,11 @@ Paste the following code snippet immediately before the closing `</body>` tag on
 #### Basic Code (Default Style)
 
     <script
-        src="https://cdn.jsdelivr.net/gh/ashgoodman/agewallet-simplejs@1/aw-loader.js"
+        src="https://cdn.jsdelivr.net/gh/agewallet-client/agewallet-simple-js@1/aw-loader.js"
         data-client-id="YOUR_CLIENT_ID_HERE">
     </script>
+
+##### Be sure to replace `YOUR_CLIENT_ID_HERE` with your actual client id obtained in Step 1
 
 ## Configuration Options
 
@@ -45,15 +47,15 @@ Customize the look and feel of your age gate by adding `data-` attributes to you
 This example sets a custom logo, changes the text, expires the session after 1 hour, and loads a custom theme.
 
     <script
-        src="[https://cdn.jsdelivr.net/gh/ashgoodman/agewallet-simplejs@1/aw-loader.js](https://cdn.jsdelivr.net/gh/ashgoodman/agewallet-simplejs@1/aw-loader.js)"
+        src="https://cdn.jsdelivr.net/gh/agewallet-client/agewallet-simple-js@1/aw-loader.js"
         data-client-id="YOUR_CLIENT_ID_HERE"
         data-title="Restricted Access"
         data-description="Welcome to the reserve. Please verify your age."
-        data-logo="[https://mywinery.com/images/logo.png](https://mywinery.com/images/logo.png)"
+        data-logo="https://mywinery.com/images/logo.png"
         data-yes-label="Enter Site"
         data-no-label="Exit"
         data-expiry="60"
-        data-css="[https://mywinery.com/css/age-gate-theme.css](https://mywinery.com/css/age-gate-theme.css)">
+        data-css="https://simpleaw-test.netlify.app/demo.css">
     </script>
 
 ## Troubleshooting
